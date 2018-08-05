@@ -47,6 +47,7 @@
     <Compile Include="Source\Board.cs" />
     <Compile Include="Source\Image.cs" />
     <Compile Include="Source\Screen.cs" />
+    <Compile Include="Source\Tile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
