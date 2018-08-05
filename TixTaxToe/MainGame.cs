@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using TixTaxToe.Source;
 
 namespace TixTaxToe
 {
@@ -12,18 +13,15 @@ namespace TixTaxToe
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+ 
+
         public MainGame()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
 
-        /// <summary>
-        /// Allows the game to perform any inithrkdymkeykjik,ialization it needs to before starting to run.
-        /// This is where it can query for any required services and load any non-graphic
-        /// related content.  Calling base.Initialize will enumerate through any components
-        /// and initialize them as well.
-        /// </summary>
+  
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
@@ -40,6 +38,7 @@ namespace TixTaxToe
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            Image.SetTextures(this);
             // TODO: use this.Content to load your game content here
         }
 
@@ -59,7 +58,7 @@ namespace TixTaxToe
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+            if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
             // TODO: Add your update logic here
