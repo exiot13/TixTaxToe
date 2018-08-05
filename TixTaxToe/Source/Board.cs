@@ -13,7 +13,9 @@ namespace TixTaxToe.Source
     {
         Rectangle[,] Grid = new Rectangle[3, 3];
 
-
+        //Testing githubs mergine mechanics
+        
+        
         public Board()
         {
 
@@ -28,10 +30,7 @@ namespace TixTaxToe.Source
                     Grid[x, y] = new Rectangle(100 + (64 * x), 100 + (64 * y), 64, 64);
 
                 }
-
             }
-            
         }
-
     }
 }
