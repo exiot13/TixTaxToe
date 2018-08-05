@@ -30,8 +30,7 @@ namespace TixTaxToe.Source
                 }
 
             }
-
-
+            
         }
 
     }
